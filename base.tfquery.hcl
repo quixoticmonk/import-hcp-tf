@@ -1,12 +1,5 @@
-list "aws_instance" "stopped" {
+list "aws_iam_role" "all_roles" {
   provider = aws
-
-  config {
-    filter {
-      name   = "instance-state-name"
-      values = ["stopped"]
-    }
-  }
 }
 
 
